@@ -1,7 +1,7 @@
-const messageInput = document.guerySelector('#name-input');
-const messageName = document.guerySelector('#name-output');
+const messageInput = document.querySelector('#name-input');
+const messageName = document.querySelector('#name-output');
 
-messageInput.addEventListener('inpyt', (event) => {
+messageInput.addEventListener('input', (event) => {
     if (event.currentTarget.value === '') {
         messageName.textContent = 'Anonymous';
     } else {

@@ -13,7 +13,7 @@ const images = [
   },
 ];
 
-const galleryList = document.guerySelector('.gallery');
+const galleryList = document.querySelector('.gallery');
 const galleryListItem = images.map((image) => `<li><img src="${image.url}" alt="${image.alt}" width="370"/></li>`)
   .join('');
 

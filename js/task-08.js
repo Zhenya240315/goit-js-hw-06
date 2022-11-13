@@ -1,4 +1,4 @@
-const form = document.guerySelector('.login-form');
+const form = document.querySelector('.login-form');
 form.addEventListener('submit', formSubmit);
 
 function formSubmit(event) {

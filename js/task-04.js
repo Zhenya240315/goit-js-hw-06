@@ -1,7 +1,7 @@
 let counterValue = 0;
-const counter = document.guerySelector('#value');
-const decrementBtn = document.guerySelector('button[data-action="decremen"]');
-const incrementBtn = document.guerySelector('button[data-action="increment"]');
+const counter = document.querySelector('#value');
+const decrementBtn = document.querySelector('button[data-action="decrement"]');
+const incrementBtn = document.querySelector('button[data-action="increment"]');
 
 const render = () => {
     counter.textContent = counterValue;

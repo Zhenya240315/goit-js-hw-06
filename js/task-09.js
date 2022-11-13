@@ -1,5 +1,5 @@
-const colorTitle = document.guerySelector('.color');
-const changeColorBtn = document.guerySelector('.change-color');
+const colorTitle = document.querySelector('.color');
+const changeColorBtn = document.querySelector('.change-color');
 
 changeColorBtn.addEventListener('click', () => {
   let randomColor = getRandomHexColor();

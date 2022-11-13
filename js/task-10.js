@@ -2,22 +2,22 @@ let arrBoxes = [];
 let boxSize = 30;
 let numberOfboxes = 0;
 
-const form = document.guerySelector('#controls');
-const divForBoxes = document.guerySelector('#boxes');
-const ceateBtn = document.guerySelector('[data-create]');
-const desroyBtn = document.guerySelector('[data-destroy]');
+const form = document.querySelector('#controls');
+const divForBoxes = document.querySelector('#boxes');
+const createBtn = document.querySelector('[data-create]');
+const desroyBtn = document.querySelector('[data-destroy]');
 
-ceateBtn.addventListener('click', () => {
-  divForBoxes.inserAdjacentHTML('beforeend', arrBoxes.join(''));
+createBtn.addEventListener('click', () => {
+  divForBoxes.insertAdjacentHTML('beforeend', arrBoxes.join(''));
   arrBoxes = [];
 });
 
-desroyBtn.addventListener('click', () => {
+desroyBtn.addEventListener('click', () => {
   divForBoxes.innerHTML = '';
-  arrSize = 30;
+  boxSize = 30;
 });
 
-form.firstElementChild.addventListener('blur', (event) => {
+form.firstElementChild.addEventListener('blur', (event) => {
   numberOfboxes = Number(event.currentTarget.value);
   let counter = 0;
   while (counter < numberOfboxes) {

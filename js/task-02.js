@@ -6,7 +6,7 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const list = document.guerySelector('#ingredients');
+const list = document.querySelector('#ingredients');
 const markup = ingredients.map((ingredient) => {
   let item = document.createElement('li');
   item.className = 'item';

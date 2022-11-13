@@ -1,4 +1,4 @@
-const inputEL = document.guerySelector('#validation-input');
+const inputEL = document.querySelector('#validation-input');
 const inputDatalength = Number(inputEL.dataset.length);
 
 inputEL.addEventListener('blur', (event) => {
